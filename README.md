@@ -1,15 +1,18 @@
-# Proyek Analisis Data: E-Commerce Public Dataset
+# E-Commerce Data Analysis Project 📊
+Oleh: **Afiana Nurani**
 
 ## Deskripsi
-Proyek ini bertujuan untuk menganalisis data penjualan e-commerce untuk mendapatkan insight mengenai performa kategori produk, persebaran pelanggan, dan tingkat loyalitas pelanggan menggunakan teknik RFM Analysis dan Manual Clustering.
+Dashboard ini dibuat untuk menganalisis performa bisnis e-commerce, mencakup analisis kategori produk terbaik/terburuk, distribusi geografis pelanggan, loyalitas pelanggan (segmentasi), hingga analisis RFM (Recency, Frequency, Monetary).
 
-## Struktur Data
-- `/dashboard`: Berisi data final (`main_data.csv`) dan script dashboard (`dashboard.py`).
-- `/data`: Berisi dataset mentah (CSV).
-- `notebook.ipynb`: Dokumentasi lengkap proses Data Wrangling, EDA, hingga Visualisasi.
+## Setup Environment - Anaconda
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt 
 
-## Cara Menjalankan Dashboard
-1. Pastikan Anda memiliki Python terinstal.
-2. Instal library yang dibutuhkan:
-   ```bash
-   pip install -r requirements.txt
+## Setup Environment - Shell/Terminal
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pip install -r requirements.txt
+
+## Run steamlit app
+streamlit run dashboard/dashboard.py
